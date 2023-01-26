@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>The Haukai Restaurant</title>
+   <link rel="stylesheet" href="css/w3.css">
+   <link rel="stylesheet" href="css/haukai.css">
+</head>
+
+<body>
+
+   <header class="w3-top">
+
+      <!-- Logo and nav -->
+      <div class="w3-bar w3-blue-gray w3-padding w3-card">
+
+         <a id="home" href="index.html"
+            class="w3-bar-item w3-hover-teal w3-button w3-large w3-wide w3-text-light-gray">The Haukai Restaurant</a>
+
+         <!-- Regular menu (larger screens)-->
+         <nav class="w3-right">
+            <a href="contact.html" class="w3-bar-item w3-hover-teal w3-button w3-hide-small">Contact Us</a>
+            <a href="hours.html" class="w3-bar-item w3-hover-teal w3-button w3-hide-small">Hours</a>
+            <a href="menu.html" class="w3-bar-item w3-hover-teal w3-button w3-hide-small">Menu</a>
+            <a href="reservations.html" class="w3-bar-item w3-hover-teal w3-button w3-hide-small">Reservations</a>
+            <a href="javascript:void(0)"
+               class="w3-bar-item w3-button w3-hover-teal w3-right w3-hide-large w3-hide-medium"
+               onclick="showMenu()">&#9776;</a>
+         </nav>
+
+         <!-- Mobile menu (smaller screens)-->
+         <nav id="mobileMenu" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+            <a href="contact.html" class="w3-bar-item w3-hover-teal w3-button">Contact Us</a>
+            <a href="hours.html" class="w3-bar-item w3-hover-teal w3-button">Hours</a>
+            <a href="menu.html" class="w3-bar-item w3-hover-teal w3-button">Menu</a>
+            <a href="reservations.html" class="w3-bar-item w3-hover-teal w3-button">Reservations</a>
+         </nav>
+
+      </div>
+
+   </header>
+
+   <!-- Main content -->
+   <main class="w3-content">
+
+      <!-- Menu -->
+      <div class="w3-container w3-padding-64">
+
+         <div class="w3-row">
+
+            <h1 class="w3-xlarge w3-text-brown">Menu</h1>
+
+            <div class="menuImages w3-row-padding">
+
+               <div class="w3-third">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Poarched_egg_salmon_avocado_sandwich.jpg" alt="Poached egg on salmon and bread" class="w3-image">
+                  <div class="w3-text-gray w3-small"><a href="https://commons.wikimedia.org/wiki/File:Poarched_egg_salmon_avocado_sandwich.jpg">Shisma</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>, via Wikimedia Commons</div>
+               </div>
+
+               <div class="w3-third w3-hide-small">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Seafood_basket.jpg" alt="Seafood basket" class="w3-image">
+                  <div class="w3-text-gray w3-small"><a href="https://commons.wikimedia.org/wiki/File:Seafood_basket.jpg">pointnshoot from Castro Valley, California</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons</div>
+               </div>
+
+               <div class="w3-third w3-hide-small">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Quinoa_bread_and_seaweed_butter_-_2021-11-20_-_Sarah_Stierch.jpg" alt="Loaf of bread and butter" class="w3-image">
+                  <div class="w3-text-gray w3-small"><a href="https://commons.wikimedia.org/wiki/File:Quinoa_bread_and_seaweed_butter_-_2021-11-20_-_Sarah_Stierch.jpg">Missvain</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>, via Wikimedia Commons</div>
+               </div>
+
+            </div>
+
+            <table class="menuTable w3-table w3-bordered w3-hoverable">
+               <tr>
+                  <th>Appetizers</th>
+                  <th class="w3-right">$</th>
+               </tr>
+               <tr>
+                  <td>
+                     <div>Rewena bread</div>
+                     <div class="w3-text-gray"><i>Traditional Māori bread.</i></div>
+                  </td>
+                  <td>10</td>
+               </tr>
+               <tr>
+                  <td>
+                     <div>Paua fritter</div>
+                     <div class="w3-text-gray"><i>Finely diced pieces of paua, served with a side salad and horopito dressing.</i></div>
+                  </td>
+                  <td>16</td>
+               </tr>
+               <tr>
+                  <td>
+                     <div>Raw fish</div>
+                     <div class="w3-text-gray"><i>Dried snapper fish marinated in coconut cream, served with tomatoes and spring onions.</i></div>
+                  </td>
+                  <td>20</td>
+               </tr>
+               <tr>
+                  <td>
+                     <div>Poached salmon</div>
+                     <div class="w3-text-gray"><i>Salmon poached in an orange and pistachio glaze, served with rewena bread.</i></div>
+                  </td>
+                  <td>22</td>
+               </tr>
+               <tr>
+                  <td>
+                     <div>Seafood basket</div>
+                     <div class="w3-text-gray"><i>Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns.</i></div>
+                  </td>
+                  <td>25</td>
+               </tr>
+            </table>
+
+            <table class="menuTable w3-table w3-bordered w3-hoverable w3-margin-top">
+               <tr>
+                  <th colspan="2">Main</th>
+               </tr>
+               <tr>
+                  <td>
+                     <div>Fish of the day</div>
+                     <div class="w3-text-gray"><i>Beer-battered fish and kumara fries, served with a side salad and homemade tartare.</i></div>
+                  </td>
+                  <td>25</td>
+               </tr>
+               <tr>
+                  <td>
+                     <div>Mussels and scallops</div>
+                     <div class="w3-text-gray"><i>Steamed mussel & scallop mousse, honey and soy broth.</i></div>
+                  </td>
+                  <td>25</td>
+               </tr>
+               <tr>
+                  <td>
+                     <div>Seafood chowder</div>
+                     <div class="w3-text-gray"><i>Creamy chowder filled with tarakihi, prawn, hoki, scallops and mussels, served with flatbread.</i></div>
+                  </td>
+                  <td>30</td>
+               </tr>
+               <tr>
+                  <td>
+                     <div>Pork belly</div>
+                     <div class="w3-text-gray"><i>Slow-cooked pork belly served on a bed of apple slaw with roasted kumara and crispy noodles.</i></div>
+                  </td>
+                  <td>30</td>
+               </tr>
+               <tr>
+                  <td>
+                     <div>Lamb steak</div>
+                     <div class="w3-text-gray"><i>New Zealand lamb coated in a kawakawa crumb, served with Dijon-mustard-glazed carrots, roasted butternut squash and mushroom jus.</i></div>
+                  </td>
+                  <td>33</td>
+               </tr>
+               <tr>
+                  <td>
+                     <div>Venison</div>
+                     <div class="w3-text-gray"><i>Venison crusted with Horopito, served with glazed plums, cabbage salad and red wine jus.</i></div>
+                  </td>
+                  <td>33</td>
+               </tr>
+            </table>
+
+            <table class="menuTable w3-table w3-bordered w3-hoverable w3-margin-top">
+               <tr>
+                  <th colspan="2">Dessert</th>
+               </tr>
+               <tr>
+                  <td>
+                     <div>Kapiti ice cream</div>
+                     <div class="w3-text-gray"><i>Check for daily specials.</i></div>
+                  </td>
+                  <td>10</td>
+               </tr>
+               <tr>
+                  <td>
+                     <div>Steamed pudding</div>
+                     <div class="w3-text-gray"><i>Golden-syrup-flavoured steamed pudding, served with vanilla ice cream.</i></div>
+                  </td>
+                  <td>12</td>
+               </tr>
+               <tr>
+                  <td>
+                     <div>Mini pavlova</div>
+                     <div class="w3-text-gray"><i>Mini pavlova, served with kawakawa and lemon-infused cream and fresh fruit.</i></div>
+                  </td>
+                  <td>16</td>
+               </tr>
+               <tr>
+                  <td>
+                     <div>Banoffee pie</div>
+                     <div class="w3-text-gray"><i>Toffee, fresh bananas and fresh cream. </i></div>
+                  </td>
+                  <td>16</td>
+               </tr>
+            </table>
+
+            <table class="menuTable w3-table w3-bordered w3-hoverable w3-margin-top">
+               <tr>
+                  <th colspan="2">Beverages</th>
+               </tr>
+               <tr class="menuDrinks">
+                  <th>Red</th>
+                  <th class="w3-right">Bottle/Glass</th>
+               </tr>
+               <tr>
+                  <td>Terrace Edge Pinot Noir, 2012, Wairarapa</td>
+                  <td>53/13</td>
+               </tr>
+               <tr>
+                  <td>Altitude Pinot Noir, 2010, Marlborough</td>
+                  <td>64/15</td>
+               </tr>
+               <tr>
+                  <td>Greystone Pinot Noir, 2012, Wairarapa</td>
+                  <td>73/17</td>
+               </tr>
+               <tr>
+                  <td>Terrace Edge, Syrah, 2012, Wairarapa</td>
+                  <td>53/13</td>
+               </tr>
+               <tr>
+                  <td>Altitude Syrah, 2010, Marlborough</td>
+                  <td>64/15</td>
+               </tr>
+               <tr>
+                  <td>Greystone Syrah, 2012, Wairarapa</td>
+                  <td>73/17</td>
+               </tr>
+               <tr>
+                  <td>Pegasus Bay Merlot, 2013, Waipara</td>
+                  <td>65/14</td>
+               </tr>
+               <tr>
+                  <td>Pegasus Bay Pinot Noir, 2013, Waipara</td>
+                  <td>110</td>
+               </tr>
+               <tr class="menuDrinks">
+                  <th>White</th>
+                  <th class="w3-right"></th>
+               </tr>
+               <tr>
+                  <td>Spade Oak Pinot Gris, 2011, Gisborne</td>
+                  <td>40/10</td>
+               </tr>
+               <tr>
+                  <td>Maude Pinot Gris, 2017, Otago</td>
+                  <td>49.50/11</td>
+               </tr>
+               <tr>
+                  <td>Charles Wiffen Chardonnay, 2013, Otago</td>
+                  <td>48/11</td>
+               </tr>
+               <tr>
+                  <td>Amisfield, Riesling, 2016, Otago</td>
+                  <td>53/12</td>
+               </tr>
+               <tr>
+                  <td>Lamont Riesling, 2010, Otago</td>
+                  <td>57/13</td>
+               </tr>
+               <tr>
+                  <td>Elephant Hill Viognier, 2013, Hawke's Bay</td>
+                  <td>55/12</td>
+               </tr>
+               <tr>
+                  <td>Folium Sauvignon Blanc, 2011, Marlborough</td>
+                  <td>52/11</td>
+               </tr>
+               <tr>
+                  <td>Billecart-Salmon Brut Reserve, France </td>
+                  <td>120</td>
+               </tr>
+               <tr class="menuDrinks">
+                  <th>Beer and Cider</th>
+                  <th class="w3-right"></th>
+               </tr>
+               <tr>
+                  <td>Garage project range</td>
+                  <td>11</td>
+               </tr>
+               <tr>
+                  <td>Tuatara range</td>
+                  <td>11</td>
+               </tr>
+               <tr>
+                  <td>Panhead range</td>
+                  <td>10</td>
+               </tr>
+               <tr>
+                  <td>Coopers ale</td>
+                  <td>10</td>
+               </tr>
+               <tr>
+                  <td>Heineken</td>
+                  <td>11</td>
+               </tr>
+               <tr>
+                  <td>Moa cider</td>
+                  <td>10</td>
+               </tr>
+               <tr>
+                  <td>Crooked cider</td>
+                  <td>10</td>
+               </tr>
+               <tr class="menuDrinks">
+                  <th>Non-Alcoholic</th>
+                  <th class="w3-right"></th>
+               </tr>
+               <tr>
+                  <td>Mineral water</td>
+                  <td>4</td>
+               </tr>
+               <tr>
+                  <td>Soft drinks</td>
+                  <td>4</td>
+               </tr>
+               <tr>
+                  <td>Juice</td>
+                  <td>4</td>
+               </tr>
+               <tr>
+                  <td>Coffee</td>
+                  <td>4.50</td>
+               </tr>
+               <tr>
+                  <td>Tea</td>
+                  <td>3.50</td>
+               </tr>
+            </table>
+
+         </div>
+
+      </div>
+
+   </main>
+
+   <footer class="w3-padding-16">
+      <div class="w3-row w3-center">
+         <img src="images/divider.jpg" alt="Dividing line between main content and footer" class="w3-image w3-center">
+      </div>
+      <div class="w3-row w3-center">
+         <p>1 Island Street, Kerikeri, Bay of Islands</p>
+         <p>Phone: <a href="tel://094014019">09 401 4019</a></p>
+      </div>
+   </footer>
+
+   <script>
+      function showMenu() {
+         var x = document.getElementById("mobileMenu");
+         if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+         } else {
+            x.className = x.className.replace(" w3-show", "");
+         }
+      }
+   </script>
+
+</body>
+
+</html>

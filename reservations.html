@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>The Haukai Restaurant</title>
+   <link rel="stylesheet" href="css/w3.css">
+   <link rel="stylesheet" href="css/haukai.css">
+</head>
+
+<body>
+
+   <header class="w3-top">
+
+      <!-- Logo and nav -->
+      <div class="w3-bar w3-blue-gray w3-padding w3-card">
+
+         <a id="home" href="index.html"
+            class="w3-bar-item w3-hover-teal w3-button w3-large w3-wide w3-text-light-gray">The Haukai Restaurant</a>
+
+         <!-- Regular menu (larger screens)-->
+         <nav class="w3-right">
+            <a href="contact.html" class="w3-bar-item w3-hover-teal w3-button w3-hide-small">Contact Us</a>
+            <a href="hours.html" class="w3-bar-item w3-hover-teal w3-button w3-hide-small">Hours</a>
+            <a href="menu.html" class="w3-bar-item w3-hover-teal w3-button w3-hide-small">Menu</a>
+            <a href="reservations.html" class="w3-bar-item w3-hover-teal w3-button w3-hide-small">Reservations</a>
+            <a href="javascript:void(0)"
+               class="w3-bar-item w3-button w3-hover-teal w3-right w3-hide-large w3-hide-medium"
+               onclick="showMenu()">&#9776;</a>
+         </nav>
+
+         <!-- Mobile menu (smaller screens)-->
+         <nav id="mobileMenu" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+            <a href="contact.html" class="w3-bar-item w3-hover-teal w3-button">Contact Us</a>
+            <a href="hours.html" class="w3-bar-item w3-hover-teal w3-button">Hours</a>
+            <a href="menu.html" class="w3-bar-item w3-hover-teal w3-button">Menu</a>
+            <a href="reservations.html" class="w3-bar-item w3-hover-teal w3-button">Reservations</a>
+         </nav>
+
+      </div>
+
+   </header>
+
+   <!-- Main content -->
+   <main class="w3-content">
+
+      <!-- Reservation form -->
+      <div class="w3-row w3-padding-64">
+         <div class="w3-container">
+            <h1 class="w3-xlarge w3-text-brown">Make a reservation</h1>
+
+            <p>We will call you back as soon as possible, to confirm availability for your reservation.</p>
+            
+            <form action="reservations.html" class="reservationForm w3-container w3-half">
+               <label for="name">Your name:</label>
+               <input type="text" name="name" id="name" class="w3-input">
+
+               <label for="phone">Phone number:</label>
+               <input type="tel" name="phone" id="phone" class="w3-input">
+
+               <label for="date">Reservation date and time:</label>
+               <input type="datetime-local" name="date" id="date" class="w3-input">
+
+               <label for="guests">Number of guests:</label>
+               <input type="number" name="guests" id="guests" class="w3-input">
+
+               <label for="notes">Anything else we should know?</label>
+               <textarea name="notes" id="notes" cols="30" rows="5" class="w3-input"></textarea>
+
+               <input type="submit" value="Submit Reservation" class="w3-input">
+            </form>
+
+         </div>
+      </div>
+
+   </main>
+
+   <footer class="w3-padding-16">
+      <div class="w3-row w3-center">
+         <img src="images/divider.jpg" alt="Dividing line between main content and footer" class="w3-image w3-center">
+      </div>
+      <div class="w3-row w3-center">
+         <p>1 Island Street, Kerikeri, Bay of Islands</p>
+         <p>Phone: <a href="tel://094014019">09 401 4019</a></p>
+      </div>
+   </footer>
+
+   <script>
+      function showMenu() {
+         var x = document.getElementById("mobileMenu");
+         if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+         } else {
+            x.className = x.className.replace(" w3-show", "");
+         }
+      }
+   </script>
+
+</body>
+
+</html>

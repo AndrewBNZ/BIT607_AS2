@@ -1,0 +1,27 @@
+header a#home {
+   color: #8fa7ab;
+}
+
+footer {
+   color: #75634b;
+}
+
+table.menuTable th {
+   color: #736347;
+   text-transform: uppercase;
+}
+
+table.menuTable tr td:last-child {
+   color: #a85135;
+   font-size: 1.2em;
+   text-align: right;
+}
+
+table.menuTable tr.menuDrinks th {
+   color: #47565d;
+   text-transform: none;
+}
+
+form.reservationForm input, form.reservationForm textarea {
+   margin-bottom: 16px;
+}
